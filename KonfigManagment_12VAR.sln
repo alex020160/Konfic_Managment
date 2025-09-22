@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "KonfigManagment_12VAR", "KonfigManagment_12VAR.pyproj", "{71958348-0776-4C9D-A9FD-5471E729E786}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71958348-0776-4C9D-A9FD-5471E729E786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71958348-0776-4C9D-A9FD-5471E729E786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A9D5D2C-3B36-4C62-BF94-2E6C27BBEE61}
+	EndGlobalSection
+EndGlobal
