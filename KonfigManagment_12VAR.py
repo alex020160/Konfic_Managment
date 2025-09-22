@@ -84,11 +84,8 @@ def run_command(event=None):
     return "break"
 
 def protect_prompt(event):
-    """Не позволяем редактировать текст левее приглашения в текущей строке."""
-    # Разрешаем Return — его обрабатывает run_command
     if event.keysym == "Return":
         return
-    # Навигация оставляем как есть, но Home двигаем за приглашение
     if event.keysym in ("Left", "Right", "Up", "Down", "End", "Next", "Prior",
                         "Shift_L", "Shift_R", "Control_L", "Control_R", "Alt_L", "Alt_R"):
         if event.keysym == "Home":
@@ -97,23 +94,20 @@ def protect_prompt(event):
             return "break"
         return
 
-    # Текущее начало строки и «граница» (позиция сразу после приглашения)
+
     line_start = console.index("insert linestart")
     guard = console.index(f"{line_start}+{len(prompt)}c")
     idx = console.index("insert")
 
-    # Если курсор на/до границы — переносим его на guard и не блокируем ввод
+
     if console.compare(idx, "<=", guard):
         console.mark_set("insert", guard)
-        # Не возвращаем "break": позволяем символу вставиться уже после приглашения
 
-    # Запрещаем Backspace стирать приглашение
     if event.keysym == "BackSpace":
         idx = console.index("insert")
         if console.compare(idx, "<=", guard):
             return "break"
 
-    # Запрет Delete, если удаляем символ внутри приглашения
     if event.keysym == "Delete":
         next_idx = console.index("insert +1c")
         if console.compare(next_idx, "<=", guard):
