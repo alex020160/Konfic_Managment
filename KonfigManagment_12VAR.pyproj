@@ -11,6 +11,13 @@
     <OutputPath>.</OutputPath>
     <Name>KonfigManagment_12VAR</Name>
     <RootNamespace>KonfigManagment_12VAR</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>--vfs .\test_vfs --script test_vfs.vfs</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <Environment>
+    </Environment>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>Global|PythonCore|3.12</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +29,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="KonfigManagment_12VAR.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.12" />
+    <InterpreterReference Include="Global|PythonCore|3.13" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="run_emulator.bat" />
+    <Content Include="test_vfs.vfs" />
+    <Content Include="test_vfs\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="test_vfs\" />
+    <Folder Include="test_vfs\etc\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
