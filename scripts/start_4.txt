@@ -1,0 +1,5 @@
+ls -l
+uname
+uname -s -r -m
+head -n 1 /docs/info.txt
+head /readme.md

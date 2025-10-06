@@ -1,0 +1,42 @@
+{
+  "type": "dir",
+  "name": "/",
+  "children": [
+    {
+      "type": "file",
+      "name": "readme.txt",
+      "encoding": "text",
+      "content": "Hello VFS!\n"
+    },
+    {
+      "type": "dir",
+      "name": "docs",
+      "children": [
+        {
+          "type": "file",
+          "name": "info.txt",
+          "encoding": "text",
+          "content": "inside /docs\n"
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "data",
+      "children": [
+        {
+          "type": "dir",
+          "name": "logs",
+          "children": [
+            {
+              "type": "file",
+              "name": "log1.txt",
+              "encoding": "text",
+              "content": "level 3\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

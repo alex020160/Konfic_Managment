@@ -1,0 +1,5 @@
+ls -l
+chmod 755 /docs
+chmod 600 /readme.txt
+ls -l
+head -n 1 /readme.txt

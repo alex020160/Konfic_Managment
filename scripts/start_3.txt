@@ -1,0 +1,9 @@
+pwd
+ls
+cd docs
+ls
+cat info.txt
+cd /
+cat readme.txt
+cd /nope
+cat /nope.txt

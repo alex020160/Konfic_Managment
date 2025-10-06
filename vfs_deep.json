@@ -1,0 +1,126 @@
+{
+  "type": "dir",
+  "name": "/",
+  "children": [
+    {
+      "type": "dir",
+      "name": "etc",
+      "children": [
+        {
+          "type": "file",
+          "name": "config.ini",
+          "encoding": "text",
+          "content": "[core]\nmode=demo\nlog_level=info\n",
+          "mode": "0644"
+        },
+        {
+          "type": "dir",
+          "name": "nginx",
+          "children": [
+            {
+              "type": "file",
+              "name": "nginx.conf",
+              "encoding": "text",
+              "content": "server { listen 8080; root /var/www; index index.html; }\n",
+              "mode": "0644"
+            }
+          ],
+          "mode": "0755"
+        }
+      ],
+      "mode": "0755"
+    },
+    {
+      "type": "dir",
+      "name": "var",
+      "children": [
+        {
+          "type": "dir",
+          "name": "log",
+          "children": [
+            {
+              "type": "file",
+              "name": "app.log",
+              "encoding": "text",
+              "content": "2025-09-29 10:00:00 start\n2025-09-29 10:05:00 ok\n",
+              "mode": "0644"
+            }
+          ],
+          "mode": "0755"
+        },
+        {
+          "type": "dir",
+          "name": "www",
+          "children": [
+            {
+              "type": "file",
+              "name": "index.html",
+              "encoding": "text",
+              "content": "<!doctype html>\n<html><head><title>VFS</title></head><body><h1>Hello from VFS</h1></body></html>\n",
+              "mode": "0644"
+            }
+          ],
+          "mode": "0755"
+        }
+      ],
+      "mode": "0755"
+    },
+    {
+      "type": "dir",
+      "name": "home",
+      "children": [
+        {
+          "type": "dir",
+          "name": "user",
+          "children": [
+            {
+              "type": "dir",
+              "name": "docs",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "readme.md",
+                  "encoding": "text",
+                  "content": "# Deep VFS\nThis is a third-level file under /home/user/docs.\n",
+                  "mode": "0644"
+                }
+              ],
+              "mode": "0755"
+            }
+          ],
+          "mode": "0755"
+        }
+      ],
+      "mode": "0755"
+    },
+    {
+      "type": "dir",
+      "name": "bin",
+      "children": [
+        {
+          "type": "file",
+          "name": "hello.sh",
+          "encoding": "text",
+          "content": "#!/bin/sh\necho \"Hello from VFS\"\n",
+          "mode": "0755"
+        }
+      ],
+      "mode": "0755"
+    },
+    {
+      "type": "dir",
+      "name": "lib",
+      "children": [
+        {
+          "type": "file",
+          "name": "libdata.bin",
+          "encoding": "base64",
+          "content": "AQIDBAUGBwgJCg==",
+          "mode": "0644"
+        }
+      ],
+      "mode": "0755"
+    }
+  ],
+  "mode": "0755"
+}

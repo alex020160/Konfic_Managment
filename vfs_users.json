@@ -1,0 +1,26 @@
+{
+  "app_settings": {
+    "version": "1.0.0",
+    "theme": "light"
+  },
+  "users": [
+    {
+      "id": "user_001",
+      "name": "Alice",
+      "role": "admin"
+    },
+    {
+      "id": "user_002",
+      "name": "Bob",
+      "role": "viewer"
+    }
+  ],
+  "logs": [
+    {
+      "timestamp": "2025-09-29T09:00:00Z",
+      "event": "login",
+      "user_id": "user_001",
+      "status": "success"
+    }
+  ]
+}

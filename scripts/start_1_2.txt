@@ -1,0 +1,4 @@
+unknowncmd
+cd "path with spaces"
+ls "some arg"
+

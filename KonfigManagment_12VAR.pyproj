@@ -35,13 +35,25 @@
     <InterpreterReference Include="Global|PythonCore|3.13" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="run_emulator.bat" />
-    <Content Include="test_vfs.vfs" />
-    <Content Include="test_vfs\readme.txt" />
+    <Content Include="run\run_1_2.bat" />
+    <Content Include="run\run_1_2.ps1" />
+    <Content Include="run\run_3.bat" />
+    <Content Include="run\run_3.ps1" />
+    <Content Include="run\run_4.bat" />
+    <Content Include="run\run_4.ps1" />
+    <Content Include="run\run_5.bat" />
+    <Content Include="run\run_5.ps1" />
+    <Content Include="scripts\start_1_2.txt" />
+    <Content Include="scripts\start_3.txt" />
+    <Content Include="scripts\start_4.txt" />
+    <Content Include="scripts\start_5.txt" />
+    <Content Include="vfs_deep.json" />
+    <Content Include="vfs_min.json" />
+    <Content Include="vfs_users.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="test_vfs\" />
-    <Folder Include="test_vfs\etc\" />
+    <Folder Include="run\" />
+    <Folder Include="scripts\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
